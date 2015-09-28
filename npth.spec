@@ -4,7 +4,7 @@
 #
 Name     : npth
 Version  : 1.2
-Release  : 1
+Release  : 2
 URL      : ftp://ftp.gnupg.org/gcrypt/npth/npth-1.2.tar.bz2
 Source0  : ftp://ftp.gnupg.org/gcrypt/npth/npth-1.2.tar.bz2
 Summary  : NPTH - the new GNU Portable Threads Library
