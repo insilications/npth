@@ -6,7 +6,7 @@
 #
 Name     : npth
 Version  : 1.3
-Release  : 5
+Release  : 6
 URL      : ftp://ftp.gnupg.org/gcrypt/npth/npth-1.3.tar.bz2
 Source0  : ftp://ftp.gnupg.org/gcrypt/npth/npth-1.3.tar.bz2
 Source99 : ftp://ftp.gnupg.org/gcrypt/npth/npth-1.3.tar.bz2.sig
