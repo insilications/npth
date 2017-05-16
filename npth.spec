@@ -5,14 +5,14 @@
 # Source0 file verified with key 0x249B39D24F25E3B6 (dshaw@jabberwocky.com)
 #
 Name     : npth
-Version  : 1.3
-Release  : 6
-URL      : ftp://ftp.gnupg.org/gcrypt/npth/npth-1.3.tar.bz2
-Source0  : ftp://ftp.gnupg.org/gcrypt/npth/npth-1.3.tar.bz2
-Source99 : ftp://ftp.gnupg.org/gcrypt/npth/npth-1.3.tar.bz2.sig
+Version  : 1.4
+Release  : 7
+URL      : ftp://ftp.gnupg.org/gcrypt/npth/npth-1.4.tar.bz2
+Source0  : ftp://ftp.gnupg.org/gcrypt/npth/npth-1.4.tar.bz2
+Source99 : ftp://ftp.gnupg.org/gcrypt/npth/npth-1.4.tar.bz2.sig
 Summary  : NPTH - the new GNU Portable Threads Library
 Group    : Development/Tools
-License  : GPL-2.0 LGPL-3.0
+License  : LGPL-2.1
 Requires: npth-bin
 Requires: npth-lib
 
@@ -47,14 +47,14 @@ lib components for the npth package.
 
 
 %prep
-%setup -q -n npth-1.3
+%setup -q -n npth-1.4
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1492808287
+export SOURCE_DATE_EPOCH=1494942379
 %configure --disable-static
 make V=1  %{?_smp_mflags}
 
@@ -66,7 +66,7 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make VERBOSE=1 V=1 %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1492808287
+export SOURCE_DATE_EPOCH=1494942379
 rm -rf %{buildroot}
 %make_install
 
@@ -86,4 +86,4 @@ rm -rf %{buildroot}
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libnpth.so.0
-/usr/lib64/libnpth.so.0.0.6
+/usr/lib64/libnpth.so.0.1.0
