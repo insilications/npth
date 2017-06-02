@@ -1,3 +1,15 @@
+2017-06-02  Werner Koch  <wk@gnupg.org>
+
+	Release 1.5.
+	+ commit 77c094e606b3952c470ccfa21b546bb13e4de1db
+	* configure.ac: Set LT version to C1/A1/R1.
+
+2017-06-01  NIIBE Yutaka  <gniibe@fsij.org>
+
+	Fix busy_wait_for.
+	+ commit 4fae99976c31bae53183aeec8df2032aaba2e689
+	* src/npth.c (busy_wait_for): Remove comparison negation.
+
 2017-05-16  Werner Koch  <wk@gnupg.org>
 
 	Release 1.4.
