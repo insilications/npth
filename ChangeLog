@@ -1,3 +1,31 @@
+2018-07-16  Werner Koch  <wk@gnupg.org>
+
+	Release 1.6.
+	+ commit 771287929ed226add3ef27de882c5359dcd3f66e
+	* configure.ac: Bump LT version to C1/A1/R2.
+
+2018-07-12  NIIBE Yutaka  <gniibe@fsij.org>
+
+	build: Let configure create the VERSION file.
+	+ commit 90e3dda03585dd4c1bcbab3da194cb9aee9c80fe
+	* autogen.sh: Update from libgpg-error.
+	* configure.ac: Use mym4_* things to create VERSION file.
+	* Makefile.am (dist-hook): Do not create VERSION.
+	(EXTRA_DIST): Add VERSION.
+
+2018-05-28  NIIBE Yutaka  <gniibe@fsij.org>
+
+	build: Fix libraries for HP-UX.
+	+ commit f8b8e5d1112a7b1aee0669ed14679ca27e8a95df
+	* configure.ac: HP-UX requires -lpthread and -lrt.
+
+2017-11-30  NIIBE Yutaka  <gniibe@fsij.org>
+
+	w32: Fix memory leak for npth_create.
+	+ commit 167b0dde6f77a15af2e75da570e88720a335705e
+	* w32/npth.c (npth_create): Free ATTR when allocated.
+	(npth_attr_destroy): Clear.
+
 2017-06-02  Werner Koch  <wk@gnupg.org>
 
 	Release 1.5.
