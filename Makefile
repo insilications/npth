@@ -1,5 +1,6 @@
 PKG_NAME := npth
-URL = https://gnupg.org/ftp/gcrypt/npth/npth-1.6.tar.bz2
+URL = https://dev.gnupg.org/source/npth.git
 ARCHIVES = 
+ARCHIVES_GIT = 
 
 include ../common/Makefile.common
