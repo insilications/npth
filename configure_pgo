@@ -1,0 +1,4 @@
+--enable-shared
+--enable-static
+--disable-doc
+--enable-maintainer-mode
